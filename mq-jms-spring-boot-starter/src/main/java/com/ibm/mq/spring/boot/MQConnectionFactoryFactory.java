@@ -223,9 +223,6 @@ public class MQConnectionFactoryFactory {
   }
 
   static boolean isNullOrEmpty(String s) {
-    if (s == null || s.isEmpty())
-      return true;
-    else
-      return false;
+    return s == null || s.isEmpty() ? true : false;
   }  
 }
